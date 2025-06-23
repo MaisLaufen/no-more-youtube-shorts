@@ -1,3 +1,7 @@
+if (typeof browser === "undefined") {
+  var browser = chrome;
+}
+
 chrome.storage.sync.get(["shortsEnabled"], ({ shortsEnabled }) => {
   if (shortsEnabled === false) return;
 

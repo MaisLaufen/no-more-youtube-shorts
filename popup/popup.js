@@ -1,3 +1,7 @@
+if (typeof browser === "undefined") {
+  var browser = chrome;
+}
+
 const toggle = document.getElementById("toggleShorts");
 
 chrome.storage.sync.get(["shortsEnabled"], ({ shortsEnabled }) => {

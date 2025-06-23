@@ -1,3 +1,7 @@
+if (typeof browser === "undefined") {
+  var browser = chrome;
+}
+
 function loadBlockedShortsUI(callback) {
   const cssId = 'blockedshorts-css';
   if (!document.getElementById(cssId)) {
