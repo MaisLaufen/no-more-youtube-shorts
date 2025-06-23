@@ -54,5 +54,6 @@ html, body {
 #blocked-shorts button:hover,
 #blocked-shorts button:focus {
   background-color: #eee;
+  color: #363636;
   outline: none;
 }
