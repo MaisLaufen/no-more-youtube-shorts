@@ -23,8 +23,8 @@ html, body {
 }
 
 #blocked-shorts img.placeholder {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 20px;
   object-fit: contain;
   user-select: none;

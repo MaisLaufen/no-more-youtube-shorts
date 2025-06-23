@@ -30,7 +30,7 @@
     }
   ],
   "web_accessible_resources": [{
-    "resources": ["ui/blockedshorts.html", "ui/blockedshorts.css"],
+    "resources": ["ui/blockedshorts.html", "ui/blockedshorts.css", "img/banner.gif"],
     "matches": ["*://www.youtube.com/*"]
   }]
 }

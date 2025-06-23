@@ -98,6 +98,14 @@ chrome.storage.sync.get(["shortsEnabled", "shortsTemporarilyAllowed"], ({ shorts
 
     loadBlockedShortsUI(html => {
       shortsContainer.innerHTML = html;
+      const bannerDiv = document.getElementById("shorts-banner");
+      if (bannerDiv) {
+        const img = document.createElement("img");
+        img.src = chrome.runtime.getURL("img/banner.gif");
+        img.alt = "stop watching those stupid stupid videos";
+        img.className = "placeholder";
+        bannerDiv.appendChild(img);
+      }
 
       document.getElementById("watch-once").onclick = () => {
         chrome.storage.sync.get(["shortsTemporarilyAllowed"], ({ shortsTemporarilyAllowed }) => {
