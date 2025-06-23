@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: transparent;
+}
+#blocked-shorts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+#blocked-shorts h2 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#blocked-shorts img.placeholder {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  user-select: none;
+}
+
+#blocked-shorts p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+#blocked-shorts button {
+  background-color: #363636;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 24px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 220px;
+  transition: background-color 0.2s ease;
+}
+
+#blocked-shorts button:hover,
+#blocked-shorts button:focus {
+  background-color: #eee;
+  outline: none;
+}
